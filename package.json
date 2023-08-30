@@ -4,7 +4,8 @@
   "description": "websocket server for heyochat",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "build": "node index.js" 
   },
   "author": "johnwav",
   "license": "MIT",
