@@ -4,16 +4,9 @@ const cors = require("cors");
 
 const server = http.createServer();
 
-const io = new Server(server, {
-//   cors: {
-//     origin: "*", // Allow requests from this origin
-//     methods: ["GET", "POST"],
-//     credentials: true,
-//   },
-  addTrailingSlash: false,
-});
+const io = new Server(server);
 
-io.use(cors());
+// io.use(cors());
 
 io.on("connection", (socket) => {
   console.log("A user connected", socket.id);
@@ -23,7 +16,10 @@ io.on("connection", (socket) => {
   });
 });
 
-const PORT = process.env.PORT || 3004;
+const PORT = process.env.PORT || 3001;
+
 server.listen(PORT, () => {
   console.log(`Websocket server listening on port ${PORT}`);
 });
+
+
