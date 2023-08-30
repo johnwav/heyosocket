@@ -1,0 +1,15 @@
+{
+  "name": "heyosocket",
+  "version": "1.0.0",
+  "description": "websocket server for heyochat",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "johnwav",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "socket.io": "^4.7.2"
+  }
+}
